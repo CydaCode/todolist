@@ -11,7 +11,7 @@ window.addEventListener("load", () => {
         const task = input.value;
         
         // Set an error message
-        if(!task) {
+        if(!task || task == "" || task == null || task.indexOf(' ') == 0) {
             alert("Please Fill up a Task"); 
             return;
         } 
